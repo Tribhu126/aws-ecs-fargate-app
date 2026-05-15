@@ -545,10 +545,18 @@ The primary objective was to gain hands-on experience with modern containerized 
 
 ---
 
+# Screenshots
+
+- ![ECS frontend homepage](ecs_frontend_homepage.png)
+- ![ECS service/tasks dashboard](ecs_services_tasks_dashboard.png)
+- ![Target group healthy targets](ecs_targetgroup_health.png)
+- ![CloudWatch logs](ecs_cloudwatch_logs.png)
+
+---
+
 # Author
 
 Tribhuvan Sharma
-
 AWS Certified Solutions Architect
 
 8+ years of experience in:
