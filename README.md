@@ -27,6 +27,24 @@ The project focuses primarily on infrastructure architecture, orchestration, and
 
 ---
 
+# Application Preview
+
+## Frontend Overview
+
+The application now includes a lightweight frontend served directly from the Flask container running on ECS Fargate.
+
+The frontend consumes backend API endpoints and visually presents:
+
+* profile information
+* architecture highlights
+* deployment details
+* health status
+* live API response
+
+This keeps the project infrastructure-focused while still providing a polished user-facing experience.
+
+```
+
 # Architecture Diagram
 
 ![Architecture Diagram](architecture_ecs_fargate_app.png)
@@ -490,8 +508,6 @@ aws-ecs-fargate-app/
 └── README.md
 ```
 
----
-
 # Skills Demonstrated
 
 This project demonstrates practical experience with:
@@ -527,6 +543,14 @@ The primary objective was to gain hands-on experience with modern containerized 
 
 ---
 
+Screenshots :
+
+```text
+- ![ECS frontend homepage](ecs_frontend_homepage.png)
+- ![ECS service/tasks dashboard](ecs_services_tasks_dashboard.png)
+- ![Target group healthy targets](ecs_targetgroup_health.png)
+- ![CloudWatch logs](ecs_cloudwatch_logs.png)
+
 # Author
 
 Tribhuvan Sharma
@@ -545,4 +569,3 @@ Currently building hands-on cloud architecture and infrastructure projects focus
 * GitHub: [https://github.com/Tribhu126](https://github.com/Tribhu126)
 * Portfolio: [https://tribhuvansharma.com](https://tribhuvansharma.com)
 * LinkedIn: [https://www.linkedin.com/in/tribhuvansharma/](https://www.linkedin.com/in/tribhuvansharma/)
-
