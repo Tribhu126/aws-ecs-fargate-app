@@ -45,8 +45,6 @@ This keeps the project infrastructure-focused while still providing a polished u
 
 ---
 
----
-
 # Architecture Diagram
 
 ![Architecture Diagram](architecture_ecs_fargate_app.png)
