@@ -510,8 +510,6 @@ aws-ecs-fargate-app/
 
 ---
 
----
-
 # Skills Demonstrated
 
 This project demonstrates practical experience with:
