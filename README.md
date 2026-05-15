@@ -547,9 +547,16 @@ The primary objective was to gain hands-on experience with modern containerized 
 
 # Screenshots
 
+* ECS frontend homepage
 - ![ECS frontend homepage](ecs_frontend_homepage.png)
+
+* ECS service/tasks dashboard
 - ![ECS service/tasks dashboard](ecs_services_tasks_dashboard.png)
+
+* Target group healthy targets
 - ![Target group healthy targets](ecs_targetgroup_health.png)
+
+* CloudWatch logs
 - ![CloudWatch logs](ecs_cloudwatch_logs.png)
 
 ---
