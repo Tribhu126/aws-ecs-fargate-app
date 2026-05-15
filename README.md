@@ -43,7 +43,27 @@ The frontend consumes backend API endpoints and visually presents:
 
 This keeps the project infrastructure-focused while still providing a polished user-facing experience.
 
+Recommended screenshots for GitHub:
+
+```text
+- ECS frontend homepage
+- ECS service/tasks dashboard
+- Target group healthy targets
+- CloudWatch logs
+- ECS rolling deployment view
 ```
+
+These screenshots significantly improve recruiter and interview presentation.
+
+---
+
+# Suggested GitHub Repository Description
+
+```text
+Scalable containerized AWS application using ECS Fargate, Docker, ALB, Route53, ACM, CloudWatch, and private subnet architecture with rolling deployments and auto scaling.
+```
+
+---
 
 # Architecture Diagram
 
@@ -508,6 +528,47 @@ aws-ecs-fargate-app/
 └── README.md
 ```
 
+---
+
+# Interview Talking Points
+
+## ECS & Orchestration
+
+* Designed and deployed a containerized application architecture using Amazon ECS and AWS Fargate.
+* Implemented rolling deployments using immutable Docker images stored in Amazon ECR.
+* Configured ECS Services to maintain desired task count and replace unhealthy tasks automatically.
+
+---
+
+## Networking & Security
+
+* Designed a dedicated VPC with public and private subnet separation.
+* Deployed ECS tasks privately while exposing only the ALB publicly.
+* Implemented layered security using security-group-to-security-group communication.
+* Configured HTTPS using ACM certificates and ALB TLS termination.
+
+---
+
+## Observability & Operations
+
+* Configured centralized logging using CloudWatch Logs.
+* Implemented ALB health checks using a dedicated `/health` endpoint.
+* Configured ECS Service Auto Scaling using CPU-based target tracking policies.
+* Observed ECS orchestration behavior including task replacement, health-based routing, and rolling deployments.
+
+---
+
+## Cloud-Native Concepts Demonstrated
+
+* Immutable infrastructure and deployment concepts
+* Container orchestration
+* Horizontal scaling
+* Health-aware traffic routing
+* Serverless container runtime management
+* Infrastructure-focused deployment workflows
+
+---
+
 # Skills Demonstrated
 
 This project demonstrates practical experience with:
@@ -543,17 +604,10 @@ The primary objective was to gain hands-on experience with modern containerized 
 
 ---
 
-Screenshots :
-
-```text
-- ![ECS frontend homepage](ecs_frontend_homepage.png)
-- ![ECS service/tasks dashboard](ecs_services_tasks_dashboard.png)
-- ![Target group healthy targets](ecs_targetgroup_health.png)
-- ![CloudWatch logs](ecs_cloudwatch_logs.png)
-
 # Author
 
 Tribhuvan Sharma
+
 AWS Certified Solutions Architect
 
 8+ years of experience in:
