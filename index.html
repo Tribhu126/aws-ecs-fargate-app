@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECS Fargate Profile App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h1>🚀 ECS Fargate Profile App</h1>
+
+        <h2 id="name">Loading...</h2>
+
+        <p id="specialization"></p>
+
+        <div class="badge">
+            AWS Certified Solutions Architect
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>Architecture Highlights</h3>
+
+        <ul id="architecture-list"></ul>
+    </div>
+
+    <div class="card">
+        <h3>Deployment Information</h3>
+
+        <p><strong>Region:</strong> <span id="region"></span></p>
+        <p><strong>Deployment Model:</strong> <span id="deployment"></span></p>
+        <p><strong>Health Status:</strong> ✅ Healthy</p>
+    </div>
+
+    <div class="card">
+        <h3>Live API Response</h3>
+
+        <pre id="api-response"></pre>
+    </div>
+
+</div>
+
+<script>
+async function loadProfile() {
+    const response = await fetch('/api/profile');
+    const data = await response.json();
+
+    document.getElementById('name').innerText = data.name;
+    document.getElementById('specialization').innerText = data.specialization;
+    document.getElementById('region').innerText = data.region;
+    document.getElementById('deployment').innerText = data.deployment;
+
+    document.getElementById('api-response').innerText =
+        JSON.stringify(data, null, 2);
+
+    const list = document.getElementById('architecture-list');
+
+    data.architecture.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = item;
+        list.appendChild(li);
+    });
+}
+
+loadProfile();
+</script>
+
+</body>
+</html>
