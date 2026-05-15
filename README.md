@@ -43,8 +43,21 @@ The frontend consumes backend API endpoints and visually presents:
 
 This keeps the project infrastructure-focused while still providing a polished user-facing experience.
 
+Recommended screenshots for GitHub:
 
+```text
+- ECS frontend homepage
+- ECS service/tasks dashboard
+- Target group healthy targets
+- CloudWatch logs
+- ECS rolling deployment view
 ```
+
+These screenshots significantly improve recruiter and interview presentation.
+
+---
+
+---
 
 # Architecture Diagram
 
