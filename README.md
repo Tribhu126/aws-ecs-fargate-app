@@ -43,27 +43,8 @@ The frontend consumes backend API endpoints and visually presents:
 
 This keeps the project infrastructure-focused while still providing a polished user-facing experience.
 
-Recommended screenshots for GitHub:
 
-```text
-- ECS frontend homepage
-- ECS service/tasks dashboard
-- Target group healthy targets
-- CloudWatch logs
-- ECS rolling deployment view
 ```
-
-These screenshots significantly improve recruiter and interview presentation.
-
----
-
-# Suggested GitHub Repository Description
-
-```text
-Scalable containerized AWS application using ECS Fargate, Docker, ALB, Route53, ACM, CloudWatch, and private subnet architecture with rolling deployments and auto scaling.
-```
-
----
 
 # Architecture Diagram
 
