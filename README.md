@@ -21,7 +21,7 @@ The project focuses primarily on infrastructure architecture, orchestration, and
 
 ---
 
-# Live Application
+# Live Application        (not live now because of costs, can be made so upon request)
 
 **URL:** [https://ecs.tribhuvansharma.com](https://ecs.tribhuvansharma.com)
 
